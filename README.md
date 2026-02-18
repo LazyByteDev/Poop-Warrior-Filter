@@ -9,6 +9,15 @@ To use the tester, you require [Node.js](https://nodejs.org/en). and to run the 
 ```
 npm run ai-test
 ```
+The tester will test everything across from toxicity, casual chat, slang/abbreviations, etc. The output of the tester should look like this:
+```
+Total Tests: 1139
+Passed: 1130 (99.2%)
+Failed: 9 (0.8%)
+   - False Positives (blocked good): 0
+   - False Negatives (allowed bad): 9
+```
+If there is failures, it will give a list of what phrases failed, what it expected and what it got.
 
 ## Contribution
 1. Fork the repo
